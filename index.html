@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>BMI - Calculator</title>
+</head>
+<body>
+    <header>
+        <span>BMI - Calculator</span>
+    </header>
+    <main>
+        <h1>BMI - Calculator</h1>
+
+        <div class="content">
+
+
+            <section class="section-descrip">
+                <h3>What is Body Mass Index (BMI)?</h3>
+                <p>Body Mass Index (BMI) is a widely used measurement to assess weight status and potential health risks associated with being underweight or overweight. It calculates an individual's body mass based on their weight and height.</p>
+
+                <h3>Why was BMI developed?</h3>
+                <p>BMI was first introduced in the 19th century by Belgian mathematician Adolphe Quetelet as a way to describe the "average man." It has since become a popular tool for assessing weight status, with various modifications and refinements over time.</p>
+
+                <h3>How is BMI calculated?</h3>
+                <p><span>BMI = weight in kg / height in m²</span></p>
+                <p>Where height is your height in meters (m) and weight is your weight in kilograms (kg). For metric units (kilograms and meters):</p>
+                <ul>
+                    <li>Weight in kg</li>
+                    <li>Height in m</li>
+                </ul>
+                <p>For imperial units (pounds and inches):</p>
+                <ul>
+                    <li>Weight in lbs</li>
+                    <li>Height in in</li>
+                </ul>
+            </section>
+
+            <section class="section-calculator">
+                <h2>Calculator</h2>
+                <div class="form-bmi">
+                    <div>
+                        <label for="input-kg">Kilograms</label>
+                        <input  type="number" placeholder="Eg.: 77" required id="input-kg">
+                    </div>
+                    <div>
+                        <label for="input-height">Height</label>
+                        <input type="number" placeholder="Eg.:1.88" required id="input-height">
+                    </div>
+                    <button onclick="calcBmi()" id="bt-calculate">Calculate</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Developed by Gabriel Rendelli
+        </p>
+    </footer>
+</body>
+<script src="scripts.js"></script>
+</html>
